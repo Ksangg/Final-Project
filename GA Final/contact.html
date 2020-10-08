@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <h2>Contact Me</h2>
+
+    <div id="hamburger-menu" class="overlay">
+      <span class="closebtn" onclick="closeNav()">x</span>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+
+    <span class="openbtn" onclick="openNav()">&#8759;</span>
+    
+    <div class="container">
+
+    <form action="" class="con-1">  
+            <p>First Name:</p>
+            <input type="text" id="fname" name="fname">
+            <p>Last Name:</p>
+            <input type="text" id="lname" name="lname">
+            <p>Your Email:</p>
+            <input type="text" id="email" name="email">
+            <p>Comments/ Inquiry:</p>
+            <textarea placeholder="Your message" cols="50" rows="10" ></textarea>
+            <button>Submit</button>
+       </form>
+
+       <div class="connect-with-me">
+         
+        <div class="connect">
+            <h3>Email:</h5>
+            <p>kelsang.dsn@gmail.com</p>
+            <h3>Phone:</h3>
+            <p>201.913.2903</p>
+            <h3>Connect with me:</h3>
+          </div>
+
+    <div class="con-2">
+        <a href="https://www.instagram.com/ksangg_/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/kelsang-dolma-9a342a165/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.facebook.com/ksanggg/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://www.behance.net/ksangg_" class="fa fa-behance" target="_blank"></a>
+    </div>
+    </div>
+    </div> 
+
+    <script src="https://use.fontawesome.com/f6de236285.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById('hamburger-menu').style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById('hamburger-menu').style.width = "0%";
+      }
+    </script>
+  </body>
+</html> 

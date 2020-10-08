@@ -1,0 +1,146 @@
+body {
+    font-family: 'Gruppo', cursive, Sans-Serif;
+    color: black;
+    margin: 0;
+}
+
+/* where do you want to send the request to? My email */
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+
+span {
+    font-size: 50px;
+}
+.overlay {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.9);
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 0%;
+}
+.overlay-content {
+    text-align: center;
+    position: relative;
+    top: 20%;   
+}
+.overlay a {
+    display: block;
+    font-size: 30px;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 40px;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #818181;
+  }
+.openbtn { 
+    font-size: 45px;
+    color: grey;
+    cursor: pointer;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+.closebtn {
+    color: grey;
+    cursor: pointer;
+    margin: 20px 40px 0 0;
+    position: fixed;
+    float: right;
+    margin: 50px;
+}
+
+.container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    background-color: #d6e0f0;
+}
+form {
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+
+input {
+    width: 460px;
+    height: 30px;
+    border-color: white;
+}
+textarea {
+    font-family: 'Gruppo', cursive;
+    font-size: 16px;
+    margin-top: 10px;
+    border-color: silver;
+}
+button {
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin-top: 10px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Gruppo', cursive;
+    font-size: 18px;
+    margin: 15px 50px;
+    cursor: pointer;
+    
+}
+.connect {
+    /* border: 1px solid red; */
+    padding-left: 90px;
+    margin-left: 60px;
+}
+.con-2 {
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 'first second'
+    'third fourth';
+    grid-gap: 35px;
+    padding: 35px 140px;
+}
+.con-2 i {
+    cursor: pointer;
+}
+
+.fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #cd486b;
+    color: white;
+  }
+  .fa-behance {
+      background: black;
+      color: white;
+  }
+

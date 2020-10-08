@@ -1,0 +1,23 @@
+body {
+  background-color: #d6e0f0;
+}
+div {
+  line-height: 1.5;
+  width: 80px;
+  float: right;
+  text-align: right;
+  margin: 160px 10px;
+  font-family: "Poiret One", cursive;
+  font-size: 24px;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: grey;
+}
+/* A link that has been visited */
+a:visited {
+  color: #4c4c4c;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <title>Kelsang Dolma</title>
+  </head>
+  <body>
+    <div class="split left"><a href="k.html">
+      <div class="center">
+        <h2 class="k">K</h2>
+      </div>
+    </div>
+    <div class="split right"><a href="d.html">
+      <div class="center">
+        <h2 class="d">D</h2>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+var textWrapper = document.querySelector('.center');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.center .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 900,
+    delay: (el, i) => 40*i
+  }).add({
+    targets: '.center',
+    opacity: 0,
+    duration: 600,
+    easing: "easeOutExpo",
+    delay: 300
+  });
+</script>
+
+  </body>
+</html>
